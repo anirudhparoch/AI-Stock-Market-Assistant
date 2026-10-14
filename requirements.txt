@@ -1,0 +1,29 @@
+# Python 3.11 or 3.12 recommended (works on Apple Silicon M1/M2/M3)
+# CPU-only PyTorch: small download, works on Mac M1 and on Streamlit Community Cloud
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+# --- LangChain (LLM integration, prompts, tools, runnables) ---
+langchain>=1.0
+langchain-core>=1.0
+langchain-community>=0.4
+langchain-text-splitters>=1.0
+langchain-groq>=1.0
+langchain-ollama>=1.0
+langchain-google-genai>=2.0
+langchain-huggingface>=1.0
+langchain-tavily>=0.2
+# --- LangGraph (multi-agent workflow, state, memory) ---
+langgraph>=1.0
+# --- RAG: local embeddings + vector store ---
+sentence-transformers>=3.0
+faiss-cpu>=1.9
+# --- Market data & news ---
+yfinance>=0.2.54
+ddgs>=9.0
+pandas>=2.2
+numpy>=1.26
+# --- Utilities / app / notebook ---
+pydantic>=2.7
+python-dotenv>=1.0
+streamlit>=1.40
+ipykernel
